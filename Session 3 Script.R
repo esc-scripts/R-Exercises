@@ -46,9 +46,9 @@ legend("topright",c("Male","Female"), pch = c(1,2), bg = "white")
 
 
 #10
-MaleOwls <- OWLS$SexParent == 'Male'
-boxplot(OWLS[MaleOwls,]$NegPerChick ~ OWLS[MaleOwls,]$BroodSize, data = OWLS, xlab = "Brood Size", ylab = "NegPerChick", main = "Male Owls NegPerChick x Brood Size")
- 
+MaleOwls = OWLS[OWLS$SexParent == "Male",]
+boxplot(MaleOwls$NegPerChick ~ MaleOwls$BroodSize, data = OWLS, xlab = "Brood Size", ylab = "NegPerChick", main = "Male Owls NegPerChick x Brood Size")
+
        
 #11
 bmp("Male_Owls_NegPerChick_x Brood_Size.bmp", width = 480, height = 480)
@@ -56,7 +56,7 @@ boxplot(OWLS[MaleOwls,]$NegPerChick ~ OWLS[MaleOwls,]$BroodSize, data = OWLS, xl
 
 
 #12
-subset(OWLS, SexParent == 'Male' & BroodSize == 1)
+MaleOwls[MaleOwls$BroodSize==1,]
 
 
 #13
