@@ -63,7 +63,6 @@ print(MaleOwlsBrood1)
 #13
 OWLS$BroodFilter <- ifelse(OWLS$BroodSize <= 4, 1, ifelse(OWLS$BroodSize > 4, 2, 3))
 BroodSize.f <- factor(OWLS$BroodFilter, levels = c(1, 2), labels = c ("Small Broodsize", "Large Broodsize"))
-labels = c("Small Broodsize", "Large Broodsize")
 library(lattice)
 bwplot(OWLS$NegPerChick ~ OWLS$SexParent | BroodSize.f, ylab = "Negotiations Per Chick", xlab = "Brood Size", data = OWLS)
 
