@@ -30,8 +30,7 @@ pie(table(OWLS$SexParent), main = "Owl Parent Sex")
 
 
 #7 
-greenyellow = c("green", "yellow")
-pie(table(OWLS$SexParent), col = greenyellow, main = "Owl Parent Sex")
+pie(table(OWLS$SexParent), col = c("green", "yellow"), main = "Owl Parent Sex")
 
 
 #8 
