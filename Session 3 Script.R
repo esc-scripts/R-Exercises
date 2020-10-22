@@ -56,8 +56,7 @@ boxplot(OWLS[MaleOwls,]$NegPerChick ~ OWLS[MaleOwls,]$BroodSize, data = OWLS, xl
 
 
 #12
-MaleOwlsBrood1 = subset(OWLS, SexParent == 'Male' & BroodSize == 1)
-print(MaleOwlsBrood1)
+subset(OWLS, SexParent == 'Male' & BroodSize == 1)
 
 
 #13
